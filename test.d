@@ -47,6 +47,16 @@ enum MyEnum
     WhateverThree
 }
 
+void _Func() {
+    write("I exist only for ");
+}
+
+void TheFunc() {
+    _Func();
+
+    write("TheFunc\n");
+}
+
 void main()
 {
     string myVariable;
@@ -62,4 +72,5 @@ void main()
     writeln();
 
     PrintMe();
+    TheFunc();
 }
