@@ -1,3 +1,7 @@
+**Coding style for D language inspired by C/C++ and hungarian notation.**
+
+Not complete, just in case.
+
 ## ZST10-DStyle
 
 | **Aspect**           | **Rule** |
@@ -20,6 +24,7 @@
 | **Naming - Interfaces** | `PascalCase` |
 | **Naming - Enums**    | `PascalCase` |
 | **Function Naming**   | `PascalCAse` |
+| **Temporary Variables** | Prefixed with `t_` |
 | **Global Variables**  | Prefixed with `g_` |
 | **Struct/Class Members** | Prefixed with `m_` |
 | **Encapsulation**     | Explicit `private` for members unless needed otherwise |
@@ -83,6 +88,12 @@ void main()
     const string MY_CONST;
     immutable string IM_MY_CONST;
     alias al_Integer = int;
+
+    foreach(char t_Chr; "I'm temporary!") {
+        write(t_Chr);
+    }
+
+    writeln();
 
     PrintMe();
 }
