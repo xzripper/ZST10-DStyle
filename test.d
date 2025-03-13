@@ -55,5 +55,11 @@ void main()
     immutable string IM_MY_CONST;
     alias al_Integer = int;
 
+    foreach(char t_Chr; "I'm temporary!") {
+        write(t_Chr);
+    }
+
+    writeln();
+
     PrintMe();
 }
