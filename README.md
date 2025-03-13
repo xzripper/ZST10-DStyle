@@ -27,7 +27,7 @@ Not complete, just in case.
 | **Temporary Variables** | Prefixed with `t_` |
 | **Global Variables**  | Prefixed with `g_` |
 | **Struct/Class Members** | Prefixed with `m_` |
-| **Encapsulation**     | Explicit `private` for members unless needed otherwise |
+| **Function-utility created only for supporting other function** | Prefixed with `_` |
 | **Enums**            | PascalCase (`EnumValue`) |
 
 ## **Example**
@@ -81,6 +81,16 @@ enum MyEnum
     WhateverThree
 }
 
+void _Func() {
+    write("I exist only for ");
+}
+
+void TheFunc() {
+    _Func();
+
+    write("TheFunc\n");
+}
+
 void main()
 {
     string myVariable;
@@ -96,5 +106,6 @@ void main()
     writeln();
 
     PrintMe();
+    TheFunc();
 }
 ```
