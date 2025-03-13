@@ -23,6 +23,7 @@ Not complete, just in case.
 | **Naming - Classes**  | `PascalCase` |
 | **Naming - Interfaces** | `PascalCase` |
 | **Naming - Enums**    | `PascalCase` |
+| **Naming - Parameters** | Prefixed with `p_` |
 | **Function Naming**   | `PascalCAse` |
 | **Temporary Variables** | Prefixed with `t_` |
 | **Global Variables**  | Prefixed with `g_` |
@@ -91,7 +92,7 @@ void TheFunc() {
     write("TheFunc\n");
 }
 
-void main()
+void main(string[] p_In)
 {
     string myVariable;
     string g_MyVariable; // Global variables for future usage.
